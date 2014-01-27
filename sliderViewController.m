@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    @endmyTextField.text = [NSString stringWithFormat:@"%.1f", [sender value]];
+    myLabel.text = [NSString stringWithFormat:@"%f", self.mySlider.value];
 }
 
 - (void)viewDidUnload
@@ -40,4 +40,4 @@
     myLabel.text = [NSString stringWithFormat: @"%f", self.mySlider.value];
     
 }
-
+@end
